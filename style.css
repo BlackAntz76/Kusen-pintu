@@ -133,6 +133,21 @@ html {
     transform: scaleX(0.6);
   }
 
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--secondary);
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+
 
 section {
 padding: 50px 8%;
@@ -249,6 +264,7 @@ padding: 50px 8%;
 .social {
     position: fixed;
     top: 9%;
+    right: -77700;
     font-size: 1.8rem;
   }
   
@@ -498,12 +514,12 @@ background-position: center;
     margin-bottom: 10px;
 }
 
-.social {
+.social-foot {
     display: flex;
     align-items: center;
 }
 
-.social a {
+.social-foot a {
     font-size: 24px;
     margin-right: 10px;
     color: var(--text-color);
