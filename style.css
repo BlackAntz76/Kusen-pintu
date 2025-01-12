@@ -135,7 +135,8 @@ html {
 
   
   .navbar .navbar-extra a {
-    color: #fff;
+    display: none;
+    color: var(--primary);
     margin: 0 0.5rem;
   }
   
@@ -253,19 +254,27 @@ padding: 50px 8%;
     color: gray;
 }
 
-.media-sosial {
+/* .social {
     display: flex;
+   
+
     gap: 20px;
-    justify-content: center;
+   
     align-items: center;
-}
+    background-color: #8fc53d;
+} */
 
 
 .social {
+    display: flex;
     position: fixed;
     top: 9%;
-    right: -77700;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
     font-size: 1.8rem;
+
+  
   }
   
   .social ul {
@@ -276,19 +285,28 @@ padding: 50px 8%;
   }
   
   .social ul li {
-    display: block;
-    justify-content: center;
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 300px;
-    text-align: right;
-    padding: 0.8rem;
-    border-radius: 0 30px 30px 0;
-    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    /* color: #fff; */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 12vw;
+    border-radius: 20px 0 0 20px;
+    transition: all 0.7s ease ;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(390px);
   }
   
+.social .instagram li {
+  color: #e4405f;
+}
+
+
+
   .social ul li:hover {
-    transform: translateX(100px);
+    transform: translateX(290px);
   }
   
   .social ul li.instagram:hover {
@@ -302,20 +320,28 @@ padding: 50px 8%;
   .social ul li.facebook:hover {
     background-color: #3b5999;
   }
+  .social ul li.whatsapp:hover {
+    background-color: #25d366;
+  }
   
   .social ul li a {
+    display: flex;
+    align-items: center;
     color: white;
-    text-decoration: none;
     font-size: 1.5rem;
-    text-align: center;
+    text-decoration: none;
+    gap: 10px;
+    direction: rtl;
   }
   
   .social ul li i {
+    content: "";
     text-align: center;
-    margin-left: 1.6rem;
+    margin-left: 6rem;
     background-color: white;
     color: black;
     padding: 2rem;
+    
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -556,6 +582,9 @@ background-position: center;
 }
 
 @media (max-width: 991px) {
+  html {
+    font-size: 75%;
+  }
     .header {
         padding: 18px 4%;
     }
@@ -614,6 +643,9 @@ background-position: center;
 
 
 @media ( max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
     .header {
         padding: 11px 4%;
     }
@@ -665,6 +697,10 @@ background-position: center;
 }
 
 @media (max-width: 491px) {
+  html {
+    font-size: 55%;
+  }
+
     .home-text h1 {
         font-size: 1.7rem;
     }
