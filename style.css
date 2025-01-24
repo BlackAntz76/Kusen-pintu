@@ -162,7 +162,7 @@ html {
   font-weight: 700;
   font-style: bold;
   text-shadow: var(--primary);
-  /* background-color: khaki; */
+ 
 }
 
 .navbar .navbar-nav a:hover {
@@ -186,8 +186,6 @@ html {
 }
 
 .navbar .navbar-extra {
- 
-  background-color: wheat;
   margin-right: 2%;
 }
 .navbar .navbar-extra a {
@@ -200,6 +198,8 @@ html {
 
 #hamburger-menu {
   display: none;
+  background-color: #009688;
+  width: 399px;
 }
 
 section {
@@ -710,12 +710,10 @@ section {
 
 
   .navbar .navbar-nav {
-    /* display: flex;
-    flex-wrap: wrap; */
+   
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    /* padding-left: 1rem; */
     width: 30%;
     height: 100%;
   }
@@ -723,7 +721,6 @@ section {
   .navbar .navbar-nav a {
     width: 7rem;
     height: 3.5rem;
-    /* background-color: wheat; */
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 2rem;
