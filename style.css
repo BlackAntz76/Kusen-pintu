@@ -65,6 +65,7 @@ html {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+ 
 }
 
 @keyframes animasiku {
@@ -107,7 +108,7 @@ html {
     color: var(--test4);
     scale: 1.2;
     transform: translatex(0);
-    opacity: 1;
+    opacity: 2;
   }
 }
 
@@ -121,19 +122,16 @@ html {
   transform: translateX(-100%);
   transition: 0.6s;
   position: absolute;
+  
 }
 
-.navbar .navbar-logo:hover {
-  background: transparent;
-  transform: scale(1.2);
-  filter: drop-shadow(1px 1px 2px #000);
-}
 
 .navbar .search {
   width: 40%;
   text-align: center;
   align-items: center;
   align-content: center;
+  background-color: #000;
 }
 
 .navbar .search input {
@@ -159,20 +157,25 @@ background-color: gray;
 
 }
 
+.navbar .navbar-nav {
+width: 40%;
+background-color: #000;
+}
+
 .navbar .navbar-nav a {
+  display: inline-block;
   align-items: center;
   color: #000;
-  display: inline-block;
   font-size: 1rem;
   padding-top: 1.3rem;
   padding-inline: 0.4rem;
-  overflow: hidden;
-  transition: transform 0.5s ease;
+  /* overflow: hidden; */
   height: 3.5rem;
   font-weight: 700;
   font-style: bold;
   text-shadow: var(--primary);
-  /* background-color: khaki; */
+  transition: transform 0.5s ease;
+  width: 100%;
 }
 
 .navbar .navbar-nav a:hover {
@@ -196,11 +199,9 @@ background-color: gray;
 }
 
 .navbar .navbar-extra {
-  width: 6%;
-  margin-right: 2%;
-  
- 
+  margin-right: 5%;
 }
+
 .navbar .navbar-extra a {
   color: var(--primary);
 }
@@ -735,63 +736,91 @@ color: #e4405f;
   .section {
     padding: 50px 4%;
   }
+  
+  .navbar {
+    padding: 0 3%;
+  }
+
+  .navbar .search {
+    width: 40% ;
+    height: 50%;
+  }
+
+  .navbar .search input {
+    width: 80%;
+    height: 50%;
+  }
+  .navbar .search button {
+    height: 3.5vh;
+    width: 4rem;
+  }
+
+
+  /* .navbar .navbar-nav {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30%;
+    height: 100%;
+  }
+ 
+  .navbar .navbar-nav a {
+    width: 7rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  /* } */
+
+  /* .navbar .navbar-extra  {
+    font-size: 4rem;
+    width: 6rem;
+    height: 5rem;
+    background-size: contain;
+  }  */
+
 }
 
 @media (max-width: 881px) {
   .home-text h1 {
     font-size: 2rem;
   }
-/* 
-  #hamburger-menu {
-    display: inline-block;
-  }
-
   .navbar {
     height: 7%;
-    padding: 0 7%;
+    padding: 0 3%;
   }
 
-  .navbar-extra {
-    margin: 0 1%;
+  .navbar .search {
+    height: 90%;
+    width: 55%;
+   background-color: #25d366;
+  }
+  .navbar .search input,
+  .navbar .search button {
+    height: 4rem ;
   }
 
-  .navbar .navbar-extra a {
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 0 0.4rem;
+  .navbar .search button {
+    width: 15%;
+  }
+
+  .navbar .navbar-extra {
+    width: 15%;
+    padding-left: 5%;
+  }
+
+  /* .navbar .navbar-extra a{
+    
   } */
 
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -50%;
-    background-color: khaki;
-    width: 50vw;
-    height: 70vh;
-    transition: 0.3s;
-    opacity: 0.4;
-    overflow: hidden;
+  .navbar .navbar-extra a {
+   
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #00bfae;
+    
   }
 
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .navbar .navbar-nav a {
-    color: var(--primary);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
 
   .shop-container,
   .new-container {
@@ -814,8 +843,51 @@ color: #e4405f;
     display: inline-block;
    
   }
+
+  .navbar .navbar-extra {
+    width:15%;
+  }
+
+  .navbar .navbar-extra a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0 0.4rem;
+    background-color: yellow;
+  }
   
-  .navbar .navbar-nav a {
+/* 
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -50%;
+    background-color: khaki;
+    width: 50vw;
+    height: 70vh;
+    transition: 0.3s;
+    opacity: 0.4;
+    overflow: hidden;
+  }*/
+
+ 
+   .navbar .navbar-nav a {
+    color: var(--primary);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  } 
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+ 
+
+  /* .navbar .navbar-nav a {
     color: var(--primary);
     display: inline-block;
     font-size: 1.2rem;
@@ -827,7 +899,7 @@ color: #e4405f;
     font-weight: 700;
     font-style: bold;
     text-shadow: var(--bg);
-  }
+  } */
 
   .navbar .navbar-nav a:hover {
     text-shadow: black;
@@ -864,6 +936,7 @@ color: #e4405f;
     right: 0;
   }
  
+
   .navbar .search {
     width: 50%;
     text-align: left;
@@ -910,14 +983,107 @@ color: #e4405f;
   }
 }
 
+html {
+  font-size: 62.5%;
+}
+
+#hamburger-menu {
+  display: inline-block;
+}
+
+.navbar .navbar-nav {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #fff;
+  width: 30rem;
+  height: 100vh;
+  transition: 0.3s;
+}
+.navbar .navbar-nav.active {
+  right: 0%;
+}
+
+.navbar .navbar-nav a {
+  color: var(--bg);
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.navbar .navbar-nav a::after {
+  transform-origin: 0 0;
+}
+.navbar .navbar-nav a:hover:after {
+  transform: scaleX(0.2);
+}
+.about .row {
+  flex-wrap: wrap;
+}
+.about .row .about-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+.about .row .content {
+  padding: 0;
+}
+.about .row .content h3 {
+  margin-top: 1em;
+  font-size: 1.6rem;
+}
+.menu p {
+  font-size: 1.2rem;
+}
+
+.contact .row {
+  flex-wrap: wrap;
+}
+.contact .row .maps {
+  height: 30rem;
+}
+
+.contact .row form {
+  padding-top: 0;
+}
+
+
+
+
 @media (max-width: 491px) {
   html {
     font-size: 55%;
   }
 
+  .navbar {
+    padding: 0 1%;
+  }
+
+  .navbar .navbar-extra  {
+    width: 23%;
+    padding-left: 5px;
+  }
+
+  
+
+
+  .navbar .search {
+    width: 43%;
+    background-color: #009688;
+    margin: none;
+    padding: none;
+  }
+
+  /* .navbar .navbar-extra a {
+    font-weight: 100;
+  } */
+
+
   .home-text h1 {
     font-size: 1.7rem;
   }
+
   .shop-container,
   .new-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -934,4 +1100,6 @@ color: #e4405f;
   .about-text h2 {
     font-size: 1rem;
   }
+  
+
 }
