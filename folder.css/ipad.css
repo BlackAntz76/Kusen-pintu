@@ -1,0 +1,172 @@
+
+@media (min-width: 769px) and  (max-width:884px){
+    html {
+      font-size: 85%;
+    }
+    /* .header {
+      padding: 18px 4%;
+    } */
+    /* .section {
+      padding: 50px 4%;
+    } */
+    
+  
+    .navbar .search {
+      width: 50% ;
+  
+    }
+  
+    .navbar .search input {
+     height: 80%;
+    }
+  
+    .navbar .search button {
+      width: 4rem;
+      height: 2.8rem;
+  
+    }
+  
+  
+    .navbar .navbar-nav {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 30%;
+      height: 80%;
+      padding-left: 5%;
+    } 
+   
+     .navbar .navbar-nav a {
+      position: relative;
+      top: -8px;
+      width: 7rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 2rem;
+  } 
+  
+    .navbar .navbar-extra  {
+      position: relative;
+      top: 20px;
+      left: 10px;
+    } 
+
+  
+  .social ul li {
+    top: 40px;
+    left: -350px;
+  }
+  
+  .social ul li:hover {
+    transform: translateX(150px);
+    color: #fff;
+    width: 160%;
+  
+  }
+  .home {
+    position: relative;
+    top: 98px;
+    height: 110vh;
+    margin-bottom: 10%;
+  }
+  .home .home-text {
+    height: 50%;
+  }
+  
+  .home .home-text h1 {
+    font-size: 3.9rem;
+    /* letter-spacing: 1.4rem; */
+    line-height: 2;
+  
+   
+  }
+  
+  .home .home-text h1:hover {
+    font-weight: bold;
+    
+  }
+  
+  .home .home-text h1 span {
+    /* letter-spacing: 1.4rem; */
+    line-height: 2;
+  }
+  
+
+  .home .home-text p {
+    height: 15%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 9%;
+  }
+  .btn {
+    height: 15%;
+    width: 40%;
+    font-size: 1.4rem;
+
+    font-weight: bold;
+  }
+  .heading {
+    margin-bottom: 5%;
+    position: relative;
+    top: 20px;
+  }
+
+  .heading h1 {
+    /* padding-top: 9%; */
+    margin-bottom: 1%;
+  }
+
+
+  .shop {
+    padding-top: 10%;
+  }
+  
+  .new {
+    padding-top: 10%;
+    margin-bottom: 11%;
+  }
+
+  .about {
+    position: relative;
+    height: 60vh;
+    padding-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .brands {
+    position: relative;
+    top: -100px;
+    height: 10%;
+  }
+  .brands-container {
+    background-color: khaki;
+    width: 95vw;
+  }
+
+  .footer {
+    position: relative;
+    top:-150px;
+    height: 60vh;
+    row-gap: 5rem;
+  }
+
+.footer-contact {
+    padding: 5%;
+}
+
+  .social-foot {
+    width: 70%;
+    padding-top: 10%;
+  }
+
+ .map {
+    height: 60%;
+    /* padding-top: 5%; */
+
+  }
+  .copyright {
+    position: relative;
+    top: -30px;
+  }
+  }

@@ -1,0 +1,46 @@
+/* @media (max-width: 881px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    height: 7%;
+    padding: 0 3%;
+  }
+
+  .navbar .search {
+    height: 80%;
+    width: 55%;
+   
+  }
+  .navbar .search input,
+  .navbar .search button {
+    height: 3rem ;
+  }
+
+  .navbar .search button {
+    width: 10%;
+  }
+
+  .navbar .navbar-extra {
+    width: 15%;
+    padding-left: 5%;
+    background-color: #00bfae;
+  } */
+
+  .navbar .navbar-extra a{
+    
+  }
+  .navbar .navbar-extra a {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #00bfae;
+    
+  }
+
+
+  .shop-container,
+  .new-container {
+    grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+  }
+}  */
+
